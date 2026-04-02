@@ -7,4 +7,4 @@ num1 = int(input("숫자 1 : "))
 num2 = int(input("숫자 2 : "))
 num3 = int(input("숫자 3 : "))
 
-print("평균 :",average(num1,num2,num3))
+print("평균 :",round(average(num1,num2,num3),1))
