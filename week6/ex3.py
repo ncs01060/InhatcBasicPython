@@ -8,5 +8,8 @@ year = '19'+front[:2]
 month = front[2:4]
 day = front[4:6]
 
+age = 2026 - int(year)
+
 print("당신은", year, "년에 태어나셨군요")
 print("당신의 생일은",month,"월",day,"일 이군요")
+print("당신의 나이는", age, "입니다.")
