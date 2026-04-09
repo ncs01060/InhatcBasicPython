@@ -69,13 +69,18 @@ print(ss.isspace())
 # 숫자이면 '숫자입니다'
 # 섞여 있으면 '글자+숫자입니다."
 # 그렇지 않으면 '그 외 문자' 출력하기
+# 무한루프 이용 => 종료 조건 공백이 들어오면 종료
 
-s = input()
-if s.isalpha():
-    print('글자입니다.')
-elif s.isdigit():
-    print("숫자입니다.")
-elif s.isalnum():
-    print("글자+숫자입니다.")
-else:
-    print("그 외 문자")
+while True:
+    s = input()
+    # 종료 조건 체크
+    if s.isspace():
+        break
+    elif s.isalpha():
+        print('글자입니다.')
+    elif s.isdigit():
+        print("숫자입니다.")
+    elif s.isalnum():
+        print("글자+숫자입니다.")
+    else:
+        print("그 외 문자")
