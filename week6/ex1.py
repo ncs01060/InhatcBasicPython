@@ -62,3 +62,20 @@ print(ss.islower())
 
 ss = ' '
 print(ss.isspace())
+
+# 실습문제
+# 문자열을 입력받아서
+# 영어나 한글이면 '글자입니다'
+# 숫자이면 '숫자입니다'
+# 섞여 있으면 '글자+숫자입니다."
+# 그렇지 않으면 '그 외 문자' 출력하기
+
+s = input()
+if s.isalpha():
+    print('글자입니다.')
+elif s.isdigit():
+    print("숫자입니다.")
+elif s.isalnum():
+    print("글자+숫자입니다.")
+else:
+    print("그 외 문자")
