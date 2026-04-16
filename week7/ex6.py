@@ -25,3 +25,29 @@ print(st)
 # 데이터 삭제하기
 del(st['연락처'])
 print(st)
+
+# key를 이용하여 value를 가져옴
+print(st['학번'])
+# print(st['연락처'])
+# get() 함수를 이용해서 value가져오기
+print(st.get('학번'))
+print(st.get('연락처'))
+
+# in 키워드 => 딕셔너리에 키가 포함되어 있는지 확인
+print('연락처' in st)
+
+# key 값들만 가져오기 => keys()
+print(st.keys())
+
+# value값들만 가져오는 함수 =>  values()
+print(st.values())
+
+# key+value 값들을 쌍으로 묶어서 반환 => items()
+print(st.items())
+
+# 딕셔너리를 이용한 반복문 처리
+for key in st.keys():
+    print(f'{key} - {st[key]}')
+
+for k,v in st.items():
+    print(f'{k} - {v}')
